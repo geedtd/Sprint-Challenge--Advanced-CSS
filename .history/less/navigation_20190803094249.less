@@ -1,32 +1,23 @@
 // Navigation code here
 .navigation {
     background-color: @wild-sand;
+    background-size: 100%;
     display: flex;
     flex-flow: column;
     align-content: center;
     text-align: center;
-    width: 98%;
 
     .title {
         h2 {
-            .navTitle();
+            font-size: 5rem;
         }
     }
     .nav-bar {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         a {
-            .navBar();
+            font-size: 2rem;
         }
-    }
-    .nav-bar:first-child {
-        margin-left: 3rem;
-    }
-    .nav-bar:last-child {
-        margin-right: 3rem;
-    }
-    .atmosphere {
-        border-radius: 0.8rem;
     }
 
 }

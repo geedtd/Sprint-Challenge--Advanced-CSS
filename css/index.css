@@ -3,10 +3,17 @@
   margin-left: 3rem;
   margin-right: 3rem;
 }
+@media (max-width:500px) {
+  .navBar {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
 .navTitle {
   font-size: 5rem;
   margin-top: 1.5rem;
   margin-bottom: 3rem;
+  width: 98%;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -176,11 +183,13 @@ p {
   flex-flow: column;
   align-content: center;
   text-align: center;
+  width: 98%;
 }
 .navigation .title h2 {
   font-size: 5rem;
   margin-top: 1.5rem;
   margin-bottom: 3rem;
+  width: 98%;
 }
 .navigation .nav-bar {
   display: flex;
@@ -190,6 +199,12 @@ p {
   font-size: 2rem;
   margin-left: 3rem;
   margin-right: 3rem;
+}
+@media (max-width:500px) {
+  .navigation .nav-bar a {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
 }
 .navigation .nav-bar:first-child {
   margin-left: 3rem;
@@ -222,11 +237,24 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width:500px) {
+  .home .space-images :nth-child(2) {
+    display: none;
+  }
+  .home .space-images :last-child {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width:500px) {
+  .home .space-images img {
+    width: 98%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -244,8 +272,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width:500px) {
+  .home .walk {
+    padding: 10px 15px;
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text {
+    width: 98%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -258,7 +299,7 @@ footer {
   text-align: center;
   padding: 0.5rem;
   color: white;
-  background-color: #23293B;
+  background-color: #22283A;
   border: 0.2rem solid black;
   border-radius: 0.5rem;
   width: 10rem;
@@ -267,9 +308,22 @@ footer {
   background-color: teal;
   color: red;
 }
+@media (max-width:500px) {
+  .home .walk .walk-text .btn {
+    height: 4rem;
+    width: 98%;
+    padding: 0.8rem;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width:500px) {
+  .home .walk .walk-img {
+    width: 98%;
+    margin-left: none;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

@@ -60,9 +60,9 @@
     @media @mobile {
       padding: 10px 15px;
       display: flex;
-      flex-flow: column-reverse;
+      flex-flow: column;
       align-items: center;
-      
+      :last-child {order: 1}
     }
 
     .walk-text {
@@ -87,10 +87,6 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      @media @mobile {
-        width: 98%;
-        margin-left: none;
-      }
       
       img {
         width: 100%;
